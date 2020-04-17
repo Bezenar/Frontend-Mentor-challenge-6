@@ -1,6 +1,9 @@
 /*________________________________________________________________________________IMPORT PARTS____*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap");
 @import "./html-coding/reset";
+@import "./html-coding/resp";
+@import "./html-coding/widths";
+@import "./html-coding/flex";
 @import "./html-coding/colors";
 /*___________________________________________________________________________________VARIABLES____*/
 /*___________________________________________________________________________________Container____*/
@@ -16,9 +19,25 @@ body {
   font-size: $fontSize;
   background: url("../images/bg-top.svg") no-repeat top right,
     url("../images/bg-bottom.svg") no-repeat bottom left, $veryLightGrayishBlue;
+  position: relative;
+  @include resp("s") {
+    background: url("../images/bg-top.svg") no-repeat;
+    background-size: 25rem;
+    background-position: -725% -4%;
+  }
 }
 .container {
   width: $container-width;
   max-width: $max-container-width;
   margin: 0 auto;
+  @include resp("s") {
+    width: 88%;
+  }
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }

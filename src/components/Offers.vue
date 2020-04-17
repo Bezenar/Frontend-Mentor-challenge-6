@@ -1,6 +1,6 @@
 <template>
-  <div class="flex ai-center offers">
-    <div class="wid-33" v-for="item in offers" :key="item.id">
+  <div class="flex ai-center offers s-dir-col">
+    <div class="wid-33 resp s-wid-100" v-for="item in offers" :key="item.id">
       <div class="wrapper" :class="{ central: item.central }">
         <div class="offer-item">
           <h6 class="heading">{{ item.packageName }}</h6>
@@ -47,16 +47,28 @@ export default {
         border-radius: 0 10px 10px 0;
       }
     }
+    @include resp("s") {
+      .wrapper {
+        border-radius: 10px;
+      }
+    }
   }
   .wrapper {
     background: white;
     color: $grayishBlue;
     border-radius: 10px;
     padding: 2rem 0;
+    @include resp("s") {
+      padding: 2.1rem 0;
+      margin-bottom: 2.1rem;
+    }
     &.central {
       background: $gradient;
-      padding: 3.5rem 0;
+      padding: 3.1rem 0;
       color: white;
+      @include resp("s") {
+        padding: 2.1rem 0;
+      }
       .offer-item {
         .button-container {
           .button-wrapper {

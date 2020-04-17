@@ -89,10 +89,17 @@ export default {
   #header {
     padding-top: 4.5rem;
     padding-bottom: 3.8rem;
+    @include resp("s") {
+      padding-top: 4rem;
+    }
     & > div {
       text-align: center;
       h1 {
         font-size: 31px;
+        @include resp("s") {
+          word-spacing: -3px;
+          letter-spacing: 1px;
+        }
       }
       .toggle-container {
         display: table;
@@ -136,6 +143,11 @@ export default {
           }
         }
       }
+    }
+  }
+  #main {
+    @include resp("s") {
+      padding-top: 1rem;
     }
   }
 }
