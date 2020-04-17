@@ -1,0 +1,59 @@
+/*________________________________________________________________________________IMPORT PARTS____*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/*___________________________________________________________________________________VARIABLES____*/
+/*___________________________________________________________________________________Container____*/
+/*___________________________________________________________________________________Container____*/
+/*_______________________________________________________________________________________Fonts____*/
+/*_______________________________________________________________________________________Fonts____*/
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  background: url("../images/bg-top.svg") no-repeat top right, url("../images/bg-bottom.svg") no-repeat bottom left, #f6f6fe;
+}
+
+.container {
+  width: 90%;
+  max-width: 1049px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=main.css.map */

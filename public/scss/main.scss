@@ -1,0 +1,24 @@
+/*________________________________________________________________________________IMPORT PARTS____*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap");
+@import "./html-coding/reset";
+@import "./html-coding/colors";
+/*___________________________________________________________________________________VARIABLES____*/
+/*___________________________________________________________________________________Container____*/
+$container-width: 90%;
+$max-container-width: 1049px;
+/*___________________________________________________________________________________Container____*/
+/*_______________________________________________________________________________________Fonts____*/
+$mainFont: "Montserrat", sans-serif;
+$fontSize: 15px;
+/*_______________________________________________________________________________________Fonts____*/
+body {
+  font-family: $mainFont;
+  font-size: $fontSize;
+  background: url("../images/bg-top.svg") no-repeat top right,
+    url("../images/bg-bottom.svg") no-repeat bottom left, $veryLightGrayishBlue;
+}
+.container {
+  width: $container-width;
+  max-width: $max-container-width;
+  margin: 0 auto;
+}
